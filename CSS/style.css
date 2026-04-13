@@ -180,3 +180,773 @@ section h2::after {
     margin: 1.2rem auto;
     border-radius: 2px;
 }
+
+.APROPOS p {
+    margin-bottom: 2rem;
+    color: var(--gris-tres-fonce);
+    font-size: 1.3rem;
+}
+
+.cometences table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+ .cometences table th, .cometences table td {
+    padding: 15px;
+ }
+
+.cometences table thead {
+    background-color: var(--violet-doux);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cometences table tbody td {
+    border-bottom: 1px solid var(--gris-claire);
+}
+
+.cometences table tbody tr:nth-child(evan) {
+    background-color: #fdfdfd;
+}
+
+.cometences table tbody tr {
+    transform: background-color 0.3s ease;
+}
+
+.cometences table thead th {
+    text-align: left;
+}
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    text-align: center;
+}
+
+.footer p {
+    color: #faf9f9;
+    margin-bottom: 1.2rem;
+}
+
+
+/* Correction de l'orthographe pour lier au HTML */
+.competences {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.competences table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Pour que les coins arrondis fonctionnent */
+}
+
+.competences th, .competences td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--gris-claire);
+}
+
+.competences thead {
+    background-color: var(--violet-doux);
+    color: white;
+}
+
+/* Effet une ligne sur deux */
+.competences tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.competences {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.competences table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.competences th, .competences td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--gris-claire);
+}
+
+.competences thead {
+    background-color: var(--violet-doux);
+    color: white;
+}
+
+/* Lignes paires en gris très léger par défaut */
+.competences tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* EFFET AU SURVOL (Animation grise) */
+.competences tbody tr:hover {
+    background-color: #eeeeee; /* Gris légèrement plus foncé au survol */
+    transition: background-color 0.2s ease-in-out;
+} 
+
+footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    padding: 2rem 0; /* Ajoute un peu d'espace interne */
+    text-align: center;
+}
+
+/* Force le texte (paragraphe) en blanc */
+footer p {
+    color: #ffffff; 
+    margin-bottom: 1.2rem;
+    opacity: 0.9; /* Optionnel : pour un look un peu plus doux */
+}
+
+/* Style des liens et logos par défaut */
+footer div a {
+    text-decoration: none;
+    color: #ffffff; /* Logos en blanc */
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Permet l'animation de transformation */
+}
+
+/* Effet au survol : passage à l'orange et léger agrandissement */
+footer div a:hover {
+    color: var(--orange-vif); /* Utilise ta variable orange */
+    transform: translateY(-3px); /* Petit saut vers le haut */
+}
+
+/* Sécurité : on s'assure que l'icône hérite bien de la couleur du lien */
+footer div a i {
+    color: inherit;
+}
+
+/* Style du lien "Mon Portfolio" */
+header div a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--violet-doux); /* Utilisation de ta variable violet doux */
+    transition: opacity 0.3s ease;
+}
+
+header div a:hover {
+    opacity: 0.8; /* Petit effet au survol du logo */
+}
+
+/* Style des liens du menu (Navigation) */
+ul li a {
+    text-decoration: none;
+    color: #000000; /* Écrits du menu en noir */
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+/* État actif (page actuelle) */
+ul li a.active {
+    color: var(--violet-doux);
+}
+
+/* Effet au survol des liens du menu */
+ul li a:hover {
+    color: var(--violet-doux); /* Passe en violet au survol */
+}
+
+/* La petite barre sous les liens au survol */
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--violet-doux);
+    transition: width 0.3s ease;
+}
+
+ul li a:hover::after, 
+ul li a.active::after {
+    width: 100%;
+}
+
+/* =========================================
+   AJOUT : SECTION CONTACT
+   ========================================= */
+
+.contact-container {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.contact-content {
+    display: flex;
+    gap: 4rem;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
+}
+
+/* Partie Gauche : Infos */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    text-align: left; /* Aligné à gauche pour cette section */
+}
+
+.contact-info h2::after {
+    margin: 1rem 0; /* Aligne la barre violette à gauche */
+}
+
+.contact-info p {
+    text-align: left;
+    margin: 1.5rem 0;
+    width: 100%;
+    color: var(--gris-tres-fonce);
+}
+
+.info-details {
+    margin: 2rem 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.info-item span {
+    font-size: 1.5rem;
+}
+
+/* Boutons de réseaux sociaux */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-social {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-social:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+/* Partie Droite : Formulaire */
+.contact-form {
+    flex: 1;
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--violet-fonce);
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--gris-claire);
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+}
+
+/* Bouton Envoyer */
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-2px);
+}
+
+/* Responsive pour tablettes et mobiles */
+@media (max-width: 850px) {
+    .contact-content {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: var(--violet-doux);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #ffffff; /* Couleur des icônes */
+    font-size: 1.8rem; /* Taille des icônes */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--orange-vif); /* Change de couleur au survol */
+}
+
+/* --- Style Page Divertissement (Style Bento) --- */
+
+.divertissement-container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.div-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.div-header h1 span {
+    color: var(--orange-vif); /* Petite touche d'orange pour le fun */
+}
+
+/* La Grille Bento */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 1.5rem;
+}
+
+.bento-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--violet-doux);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Positionnement des blocs */
+.music { grid-column: span 2; grid-row: span 1; background: linear-gradient(45deg, #6c63ff, #543EDD); }
+.gaming { grid-column: span 1; background: #FF6B6B; }
+.reading { grid-column: span 1; background: var(--orange-vif); }
+.cinema { grid-column: span 1; grid-row: span 2; background: #2d3436; }
+.sport { grid-column: span 3; background: #4ecdc4; }
+
+/* Contenu à l'intérieur des blocs */
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.bento-item i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.bento-item h3 {
+    font-size: 1.5rem;
+}
+
+.bento-item p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    width: 100% !important; /* Force l'écrasement du style global */
+    text-align: center !important;
+}
+
+/* Animation au survol */
+.bento-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .music, .cinema, .sport, .gaming, .reading {
+        grid-column: span 2;
+        height: 150px;
+    }
+}
+
+/* --- Style Page Passions --- */
+
+.passions-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 20px;
+}
+
+.passions-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.passion-item {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+/* Inversion pour une ligne sur deux */
+.passion-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.passion-image {
+    flex: 1;
+}
+
+.passion-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 15px 15px 0px var(--violet-doux); /* Effet de décalage sympa */
+    transition: transform 0.3s ease;
+}
+
+.passion-image img:hover {
+    transform: scale(1.02);
+}
+
+.passion-text {
+    flex: 1;
+}
+
+.passion-text h2 {
+    color: var(--violet-fonce);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: left !important; /* On force l'alignement à gauche */
+}
+
+/* On retire la barre centrale du style global pour cette page si besoin */
+.passion-text h2::after {
+    margin: 0.5rem 0; 
+}
+
+.passion-text p {
+    font-size: 1.1rem;
+    color: var(--gris-tres-fonce);
+    line-height: 1.8;
+    text-align: left !important;
+    width: 100% !important; /* Pour ignorer le width: 600px global */
+    margin: 0;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .passion-item, .passion-item.reverse {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .passion-image img {
+        height: 250px;
+    }
+
+    .passion-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Applique le soulignement à h1 ET h2 dans les sections */
+section h1, section h2 {
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* La barre de soulignement */
+section h1::after, section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto; /* Centre la barre */
+    border-radius: 2px;
+}
+
+/* Cas particulier : Aligner à gauche dans les blocs de texte alternés */
+.passion-text h2::after {
+    margin: 0.5rem 0; /* Aligne la barre à gauche au lieu du centre */
+}
+
+/* Appliquer le style de soulignement au H1 du divertissement */
+.div-header h1 {
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* Création de la barre violette en dessous */
+.div-header h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto; /* Centre la barre sous le texte */
+    border-radius: 2px;
+}
+
+/* Style pour le mot dans le span (Divertissement) */
+.div-header h1 span {
+    color: var(--orange-vif); /* Garde la touche d'orange si tu aimes */
+}
+
+.div-header p {
+    text-align: center;
+    color: var(--gris-tres-fonce);
+    font-size: 1.2rem;
+    width: 100% !important; /* Pour bien centrer par rapport à la page */
+    margin-top: 0;
+}
+
+/* --- Page Projets --- */
+
+.projets-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.projets-titre {
+    text-align: center;
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+
+/* La barre de soulignement sous le titre principal */
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+}
+
+/* GRILLE : 3 colonnes sur PC */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crée 3 colonnes égales */
+    gap: 2rem; /* Espace entre les cartes */
+}
+
+/* Style des Cartes de Projets */
+.projet-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+}
+
+.projet-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Empêche la déformation de l'image */
+}
+
+.projet-content {
+    padding: 1.5rem;
+}
+
+.projet-content h3 {
+    color: var(--violet-fonce);
+    margin-bottom: 0.8rem;
+}
+
+.projet-content p {
+    font-size: 0.95rem;
+    color: var(--gris-tres-fonce);
+    margin-bottom: 1.2rem;
+    text-align: left;
+    width: 100%; /* Réinitialise le width:600px global */
+}
+
+/* Tags (HTML, CSS, etc.) */
+.tags {
+    margin-bottom: 1.2rem;
+}
+
+.tags span {
+    background: var(--gris-claire);
+    color: var(--violet-doux);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Liens Code et Démo */
+.projet-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gris-claire);
+    padding-top: 1rem;
+}
+
+.projet-links a {
+    text-decoration: none;
+    color: var(--violet-fonce);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.projet-links a:hover {
+    color: var(--orange-vif);
+}
+
+/* RESPONSIVE : 2 colonnes sur tablette, 1 seule sur mobile */
+@media (max-width: 992px) {
+    .projets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .projets-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Ligne de séparation entre image et texte --- */
+
+.projet-content {
+    padding: 1.5rem;
+    /* Ajoute une bordure violette en haut du bloc de texte */
+    border-top: 3px solid var(--violet-doux); 
+    background-color: #ffffff;
+}
+
+/* Optionnel : On peut aussi arrondir un peu plus le haut du contenu 
+   pour que la ligne suive la courbe de la carte */
+.projet-card {
+    border: 1px solid var(--gris-claire); /* Un léger contour pour la carte */
+}
+
+/* On ajuste l'image pour qu'elle touche bien la ligne violette */
+.projet-image img {
+    display: block; /* Enlève l'espace vide sous l'image */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* On supprime l'ancien style manuel "underline" qui ne sert plus */
+.underline {
+    display: none;
+}
+
+/* On s'assure que le titre de la section projet utilise le style global */
+.projets-titre {
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* C'est cette règle (déjà présente dans ton CSS global) qui créera l'unique ligne */
+.projets-titre::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto; 
+    border-radius: 2px;
+}
